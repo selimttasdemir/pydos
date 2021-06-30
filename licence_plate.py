@@ -21,7 +21,7 @@ parser.add_argument('--video', help='Path to video file.')
 args = parser.parse_args()
 
 # Load names of classes
-classesFile = "D:\Belgeler D\py\projeler\yolo4-1\obj.names";
+classesFile = "\home\asd\pydos-main\obj.names";
 
 classes = None
 with open(classesFile, 'rt') as f:
@@ -29,8 +29,8 @@ with open(classesFile, 'rt') as f:
 
 # Give the configuration and weight files for the model and load the network using them.
 
-modelConfiguration = "D:\Belgeler D\py\projeler\yolo4-1\yolov4-tiny-obj.cfg";
-modelWeights = "D:\Belgeler D\py\projeler\yolo4-1\yolov4-tiny-obj_best.weights";
+modelConfiguration = "\home\asd\pydos-main\yolov4-tiny-obj.cfg";
+modelWeights = "\home\asd\pydos-main\yolov4-tiny-obj_best.weights";
 
 
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
